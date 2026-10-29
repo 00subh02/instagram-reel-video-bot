@@ -1,0 +1,7 @@
+# Telegram Link -> Video Bot
+# Engine: seowebchecker.com video downloader (1000+ sites) + yt-dlp fallback
+
+python-telegram-bot>=21.0
+yt-dlp>=2025.9.5
+python-dotenv>=1.0.0
+requests>=2.31.0

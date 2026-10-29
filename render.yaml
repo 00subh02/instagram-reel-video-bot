@@ -1,0 +1,15 @@
+# Render deploy - Background Worker (bot ke liye sahi type)
+services:
+  - type: worker
+    name: reel-link-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./reel-link-to-video-bot
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ALLOWED_GROUP_IDS
+        value: -1004451914143,-1004334916764
+      - key: DOWNLOAD_SOURCE
+        value: seowebchecker
